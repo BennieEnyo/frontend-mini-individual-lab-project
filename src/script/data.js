@@ -1,5 +1,5 @@
-// Array of project data used for dynamic rendering
-const projects = [
+// Array of project data used for dynamic rendering (renamed to avoid collision)
+const projectsData = [
   {
     id: 1,
     name: "Project One",
