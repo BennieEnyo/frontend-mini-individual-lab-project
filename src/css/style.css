@@ -152,6 +152,12 @@ nav ul li a.btn-nav:hover{background:#c62d22;}
 }
 .hero-text h1 span{color:var(--red);}
 
+.hero-bio{
+  max-width:620px;color:rgba(255,255,255,.8);
+  font-size:1rem;line-height:1.8;margin-bottom:24px;
+  font-weight:400;text-transform:none;
+}
+
 .btn-primary{
   display:inline-flex;align-items:center;gap:14px;
   background:var(--red);color:#fff;
