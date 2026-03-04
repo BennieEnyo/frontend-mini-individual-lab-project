@@ -1,11 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photography Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  Hello World!
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- HEADER -->
+<header id="header">
+  <a href="#home" class="logo">
+    <div class="logo-icon">PG</div>
+    <div class="logo-text">Photo<span>graphy</span></div>
+  </a>
+  <nav>
+    <ul id="navList">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Gallery</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="btn-nav">Contact Now</a></li>
+    </ul>
+  </nav>
+  <span class="nav-toggle" id="navToggle">&#9776;</span>
+</header>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg-split"></div>
+  <svg class="brush-strokes" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 80 Q80 60 140 100 Q200 140 260 80" stroke="white" stroke-width="40" stroke-linecap="round" opacity=".6"/>
+    <path d="M10 180 Q100 150 200 200 Q280 240 300 180" stroke="white" stroke-width="28" stroke-linecap="round" opacity=".4"/>
+    <path d="M30 280 Q120 250 220 290 Q280 310 310 270" stroke="white" stroke-width="18" stroke-linecap="round" opacity=".25"/>
+  </svg>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="eyebrow">Creative Photography</div>
+      <h1>Photography<br>Make Us <span>Happy</span><br>Take A Shot.</h1>
+      <a href="#projects" class="btn-primary">
+        Watch Portfolio
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">8+</div>
+          <div class="stat-label">Years Exp.</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">320</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">140</div>
+          <div class="stat-label">Clients</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&h=800&fit=crop&crop=face&auto=format" alt="Photographer portrait" />
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE SECTION -->
+<div id="quote-section">
+  <div class="quote-inner reveal">
+    <div class="quote-portrait">
+      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face&auto=format" alt="Salvador Dali"/>
+    </div>
+    <div class="quote-body">
+      <blockquote>You can't use up creativity. The more you use, the more you have in your significant mind.</blockquote>
+      <div class="quote-author">Salvador Dali <span>Digital Artist</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-inner">
+    <div class="about-img-wrap reveal">
+      <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=600&h=700&fit=crop&auto=format" alt="About photography"/>
+      <div class="exp-badge">
+        <div class="num">8+</div>
+        <div class="txt">Years<br>Experience</div>
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">How We Make<br>User Experiences</h2>
+      <p>I'm a creative photographer and visual artist based in New York, specializing in portrait, landscape, and editorial photography. My work blends technical precision with artistic intuition.</p>
+      <p>Every frame tells a story — I strive to capture emotions, light, and moments that would otherwise be lost in time. From commercial campaigns to intimate portraits, I bring vision and dedication to every project.</p>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-name">Portrait Photography</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Landscape</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Photo Editing</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Videography</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+        </div>
+      </div>
+      <a href="#contact" class="btn-outline">Hire Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY / PROJECTS -->
+<section id="projects">
+  <div class="inner">
+    <div class="section-label reveal">Portfolio</div>
+    <h2 class="section-title reveal">My Latest Work</h2>
+    <div class="filter-tabs reveal" id="filterTabs">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="portrait">Portrait</button>
+      <button class="filter-tab" data-filter="landscape">Landscape</button>
+      <button class="filter-tab" data-filter="editorial">Editorial</button>
+      <button class="filter-tab" data-filter="event">Event</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="inner">
+    <div class="section-label reveal">What I Do</div>
+    <h2 class="section-title reveal">My Services</h2>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
+        <h3>Portrait Photography</h3>
+        <p>Capturing the essence of people through carefully crafted portraits — studio or on-location, personal or professional.</p>
+      </div>
+      <div class="service-card reveal">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <h3>Commercial Shoots</h3>
+        <p>High-end product and brand photography for advertising campaigns, catalogs, and digital marketing.</p>
+      </div>
+      <div class="service-card reveal">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        <h3>Videography</h3>
+        <p>Cinematic video production for events, brand stories, documentaries, and social media content.</p>
+      </div>
+      <div class="service-card reveal">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <h3>Editorial & Fashion</h3>
+        <p>Magazine-quality editorial and fashion photography that tells compelling visual stories.</p>
+      </div>
+      <div class="service-card reveal">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <h3>Wedding Photography</h3>
+        <p>Timeless, emotional wedding and event photography that preserves every precious moment.</p>
+      </div>
+      <div class="service-card reveal">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        <h3>Photo Retouching</h3>
+        <p>Professional post-processing and retouching services that enhance without compromising authenticity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="inner">
+    <div class="section-label reveal">Insights</div>
+    <h2 class="section-title reveal">Latest Blog Posts</h2>
+    <div class="blog-grid" id="blogGrid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <div class="section-label reveal">Get In Touch</div>
+      <h2 class="section-title reveal">Let's Work<br>Together</h2>
+      <p class="reveal">Have a project in mind? I'd love to hear about it. Send me a message and I'll get back to you as soon as possible.</p>
+      <div class="contact-detail reveal">
+        <div class="contact-detail-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Location</strong>
+          <span>123 Studio Ave, New York, NY 10001</span>
+        </div>
+      </div>
+      <div class="contact-detail reveal">
+        <div class="contact-detail-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Email</strong>
+          <span>hello@photography.studio</span>
+        </div>
+      </div>
+      <div class="contact-detail reveal">
+        <div class="contact-detail-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.15 3.38 2 2 0 0 1 3.12 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Phone</strong>
+          <span>+1 (555) 123-4567</span>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Tell me about your project..."></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Photography Studio. All rights reserved.</p>
+  <div class="footer-socials">
+    <a href="#" title="Instagram">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+    </a>
+    <a href="#" title="Twitter/X">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+    </a>
+    <a href="#" title="LinkedIn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a href="#" title="Behance">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12H4V5h5a3.5 3.5 0 0 1 0 7zm5-7h6m-6 4h5a3.5 3.5 0 0 1 0 7H14V9z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <img id="lightboxImg" src="" alt=""/>
+</div>
+
 </body>
+
+<script src="src/script/data.js"></script>
+<script src="src/script/app.js"></script>
 </html>
