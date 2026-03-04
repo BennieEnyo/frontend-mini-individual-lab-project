@@ -73,8 +73,22 @@ document.getElementById('filterTabs').addEventListener('click',e=>{
 // ── NAV TOGGLE ──
 const toggle=document.getElementById('navToggle');
 const navList=document.getElementById('navList');
-toggle.addEventListener('click',()=>navList.classList.toggle('open'));
-navList.addEventListener('click',e=>{if(e.target.tagName==='A')navList.classList.remove('open');});
+
+// Toggle menu on hamburger click
+toggle.addEventListener('click',e=>{
+  e.stopPropagation();
+  navList.classList.toggle('open');
+});
+
+// Close menu when a link is clicked
+navList.addEventListener('click',e=>{
+  if(e.target.tagName==='A') navList.classList.remove('open');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click',e=>{
+  if(!e.target.closest('header')) navList.classList.remove('open');
+});
 
 // ── SCROLL HEADER ──
 window.addEventListener('scroll',()=>{
